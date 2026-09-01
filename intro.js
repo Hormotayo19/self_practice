@@ -89,32 +89,4 @@ let no4 = products.findIndex(function(look) {
 let no5 = products.reduce((acc, current) => acc + current.price, 0);
 console.log(no5);
 
-let no6 = products.some(function(check) {
-  return !check.inStock ;
-});
-console.log(no6);
-
-let no7 = products.every(function(check) {
-  return check.category === "Electronics";
-});
-console.log(no7);
-
-let no8 = products.some(function(check) {
-  return check.category === "Furniture";
-});
-console.log(no8);
-
-let no8a =products.map(function(look) {
-  return look.category;
-})
-let no8b = no8a.includes("Furniture");
-console.log(no8b);
-
-let no9 = [...products].sort((a, b) => a.price - b.price);
-console.log(no9);
-
-let no10a = products.filter(function(sort) {
-  return sort.category === "Electronics";
-});
-let no10b = no10a.reduce((acc, current) => acc + current.price, 0);
-console.log(no10b);
+console.log('this is a new pratice on merging and branching');
